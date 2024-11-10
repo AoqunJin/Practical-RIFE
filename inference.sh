@@ -1,8 +1,9 @@
 #!/bin/bash
 
 DATA_DIR="/path/to/data"
+# Use model RIFEv4.26_0921.zip
 
-# 遍历指定文件夹下的所有 .mp4 文件
+# Loop through all .mp4 files in the directory
 for video in "$DATA_DIR"/*.mp4; do
   if [ -f "$video" ]; then
     echo "Processing video: $video"
